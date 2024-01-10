@@ -1,0 +1,117 @@
+/* Reset some default browser styles */
+body {
+
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #f5c7f7;
+    background: linear-gradient(to right,#27296d ,#5e63b6);
+}
+.navbar {
+    background-color:  #27296d;
+}
+.navbar .logo{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color:  #f5c7f7;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+#navbarNav a {
+    text-decoration: none; 
+    position: relative; 
+    color: #f5c7f7; 
+    transition: color 0.3s ease; 
+    font-size: 20px;
+  }
+#navbarNav a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    height: 2px; 
+    background-color: #a393eb; 
+    transition: width 0.3s ease;
+    transform-origin: bottom left; 
+}
+#navbarNav a:hover {
+    color: #a393eb; 
+}
+#navbarNav  a:hover::after {
+    width: 100%;
+    transform: scaleX(1);
+}
+#home {
+  padding: 50px 0;
+}
+#about {
+    padding: 50px 0;
+}
+#skills {
+   padding: 10px 0;
+}
+.skill{
+    border: 2px solid #f5c7f7;
+    border-radius: 15px;
+    
+   
+}
+#portfolio {
+   padding: 60px 0;
+   }
+.card {
+    border: none;
+    color: #27296d;
+    background-color: #f5c7f7;
+    border-radius: 15px;
+}
+.card .btn{
+    background-color: #27296d;
+    color: #f5c7f7;
+}
+#contact {
+    padding: 60px 0;
+    
+}
+footer {
+    background-color: #27296d;;
+    color: #ffffff;
+    padding: 15px 0;
+}
+.btn-social-icon {
+    margin: 0 5px;
+}
+#about .btn{
+    color: #27296d;
+    background-color: #f5c7f7;
+    margin-left: 45%;
+}
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-toggler-icon {
+        background-color: #ffffff;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+        
+    }
+}
